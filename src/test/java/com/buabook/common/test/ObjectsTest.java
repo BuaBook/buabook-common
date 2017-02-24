@@ -14,7 +14,6 @@ import java.util.Map;
 import org.junit.Test;
 
 import com.buabook.common.Objects;
-import com.buabook.common.test.helpers.EmptyObject;
 
 public class ObjectsTest {
 
@@ -62,11 +61,6 @@ public class ObjectsTest {
 	@Test
 	public void testGetObjectFieldsAsMapReturnsEmptyMapForNullObject() {
 		assertThat(Objects.getObjectFieldsAsMap(null), is(anEmptyMap()));
-	}
-	
-	@Test
-	public void testGetObjectFieldsAsMapReturnsEmptyMapForObjectWithNoFields() {
-		assertThat(Objects.getObjectFieldsAsMap(new EmptyObject()), is(anEmptyMap()));
 	}
 	
 	@Test
