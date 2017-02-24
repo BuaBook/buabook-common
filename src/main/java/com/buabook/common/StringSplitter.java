@@ -6,6 +6,14 @@ import java.util.List;
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
 
+/**
+ * <h3>Improved {@link String#split(String)} with {@link Splitter}</h3>
+ * (c) 2017 Sport Trades Ltd
+ * 
+ * @author Jas Rajasansir
+ * @version 1.0.0
+ * @since 3 Oct 2016
+ */
 public final class StringSplitter {
 
 	/** 

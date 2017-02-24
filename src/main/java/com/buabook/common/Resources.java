@@ -6,12 +6,17 @@ import java.io.InputStreamReader;
 
 import com.google.common.io.CharStreams;
 
+/**
+ * <h3>Class Path Loading of Resources</h3>
+ * (c) 2017 Sport Trades Ltd
+ * 
+ * @author Jas Rajasansir
+ * @version 1.0.0
+ * @since 28 Nov 2016
+ */
 public final class Resources {
 
-	/**
-	 * @return The contents of the specified file as a string or <code>null</code> if the file does not exist
-	 * @see Helpers#getResourceFromClassPath(String)
-	 */
+	/** @return The contents of the specified file as a string or <code>null</code> if the file does not exist */
 	public static String getContentsFromClassPath(String fileName) throws IllegalArgumentException {
 		InputStream is = Resources.class.getClassLoader().getResourceAsStream(fileName);
 		

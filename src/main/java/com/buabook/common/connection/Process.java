@@ -23,7 +23,7 @@ public class Process {
 	 * Provides object instantiation with the port as a {@link String} and performs the
 	 * cast to {@link Integer} as part of the construction
 	 * @param hostname The hostname of the process
-	 * @param portStr The port of the process <i>as a {@link String}</li>
+	 * @param portStr The port of the process <i>as a {@link String}</i>
 	 * @throws NumberFormatException If the parse to {@link Integer} fails
 	 */
 	public Process(String hostname, String portStr) throws NumberFormatException {

@@ -16,7 +16,7 @@ import com.google.common.base.Strings;
  * <p>Functions can be specified as {@link ShutdownFunction}s to be run serially as the application shuts down</p>
  * (c) 2015 - 2017 Sport Trades Ltd
  * 
- * @author Jaskirat M.S. Rajasansir
+ * @author Jas Rajasansir
  * @version 1.1.0
  * @since 12 Jun 2015
  */

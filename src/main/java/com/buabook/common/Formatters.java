@@ -16,7 +16,7 @@ import org.joda.time.format.DateTimeFormatter;
  */
 public final class Formatters {
 	
-	/** Will convert a decimal to currency format (e.g. 10.1231 -> 10.12) */
+	/** Will convert a decimal to currency format (e.g. 10.1231 -&gt; 10.12) */
 	public static final DecimalFormat TO_CURRENCY = new DecimalFormat("0.00");
 	
 	/** Will print Joda {@link DateTime} as date with dashes (e.g. 2016-07-25) */

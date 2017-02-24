@@ -6,7 +6,7 @@ import com.google.common.base.Joiner;
 
 /**
  * <h3>Object to {@link String} Printers - For Logging</h3>
- * <br/><br/>(c) 2017 Sport Trades Ltd
+ * (c) 2017 Sport Trades Ltd
  * 
  * @author Jas Rajasansir
  * @version 1.1.0
