@@ -104,7 +104,7 @@
 					<nohelp>true</nohelp>
 					
 					<links>
-						<link>https://google.github.io/guava/releases/21.0/api/docs/</link>
+						<link>https://google.github.io/guava/releases/${guava.version}/api/docs/</link>
 					</links>
 				</configuration>
 				<executions>
