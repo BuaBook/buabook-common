@@ -21,7 +21,7 @@ import com.google.common.base.Strings;
  * @since 12 Jun 2015
  */
 public class ShutdownThread extends Thread {
-	protected static final Logger log = LoggerFactory.getLogger(ShutdownThread.class);
+	private static final Logger log = LoggerFactory.getLogger(ShutdownThread.class);
 
 	
 	private final String applicationName;
