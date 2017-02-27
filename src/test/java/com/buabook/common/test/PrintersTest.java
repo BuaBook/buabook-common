@@ -1,8 +1,7 @@
 package com.buabook.common.test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -10,11 +9,20 @@ import java.util.List;
 import org.junit.Test;
 
 import com.buabook.common.Printers;
+import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 
 public class PrintersTest {
 
-	// Helpers.listToString
+	// Printers.getListJoiner
+	
+	@Test
+	public void testGetListJoinerReturnsListJoiner() {
+		assertThat(Printers.getListJoiner(), is(not(nullValue())));
+		assertThat(Printers.getListJoiner(), is(instanceOf(Joiner.class)));
+	}
+	
+	// Printers.listToString
 
 	@Test
 	public void testListToStringReturnsStringSeparatedByCommaSpace() {
@@ -38,7 +46,7 @@ public class PrintersTest {
 		assertThat(Printers.listToString(new LinkedList<String>()), is(equalTo("")));
 	}
 	
-	// Helpers.arrayToString
+	// Printers.arrayToString
 	
 	@Test
 	public void testArrayToStringReturnsStringSeparatedByCommaSpace() {
