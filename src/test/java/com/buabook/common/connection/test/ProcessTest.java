@@ -62,6 +62,7 @@ public class ProcessTest {
 		assertThat(process.equals(process), is(equalTo(true)));
 		assertThat(process.equals(equalProcess), is(equalTo(true)));
 		
+		assertThat(process.equals(null), is(equalTo(false)));
 		assertThat(process.equals(unequalPort), is(equalTo(false)));
 		assertThat(process.equals(unequalHost), is(equalTo(false)));
 		assertThat(process.equals(completelyDifferent), is(equalTo(false)));
