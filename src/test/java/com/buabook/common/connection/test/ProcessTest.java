@@ -79,4 +79,21 @@ public class ProcessTest {
 		assertThat(nullHostProcess.equals(otherProcess), is(equalTo(false)));
 		assertThat(nullPortProcess.equals(otherProcess), is(equalTo(false)));
 	}
+	
+	// Process.hashCode
+	
+	@Test
+	public void testHashCodeReturnsNonZeroValue() {
+		Process process = new Process("host-name", 24134);
+		
+		assertThat(process.hashCode(), is(not(equalTo(0))));
+	}
+	
+	@Test
+	public void testHashCodeReturnsDifferentValuesForDifferentObjects() {
+		Process process1 = new Process("host-name", 12345);
+		Process process2 = new Process("host-name-2", 54321);
+		
+		assertThat(process1.hashCode(), is(not(equalTo(process2.hashCode()))));
+	}
 }
