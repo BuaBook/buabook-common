@@ -20,7 +20,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.buabook.common.net.DataSocket;
-import com.buabook.common.net.DataSocketFailedToInitialiseException;
+import com.buabook.common.net.exceptions.DataSocketFailedToInitialiseException;
 
 public class DataSocketTest {
 	

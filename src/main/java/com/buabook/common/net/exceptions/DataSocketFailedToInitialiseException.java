@@ -1,4 +1,4 @@
-package com.buabook.common.net;
+package com.buabook.common.net.exceptions;
 
 /**
  * (c) 2014 - 2017 Sport Trades Ltd

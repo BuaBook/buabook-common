@@ -10,6 +10,8 @@ import java.net.SocketAddress;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.buabook.common.net.exceptions.DataSocketFailedToInitialiseException;
+
 /**
  * <h3>Simple {@link Socket} Wrapper</h3>
  * <p>This class is a simple {@link Socket} wrapper that exposes the native {@link Socket#getInputStream()} and
