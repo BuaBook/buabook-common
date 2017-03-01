@@ -116,7 +116,7 @@ public class SocketAcceptorThread extends Thread {
 		
 		try {
 			newServerSocket = new ServerSocket(bindToPort.getPort());
-		} catch (IOException e) {
+		} catch (IOException | SecurityException e) {
 			log.error("Failed to bind to port {}. Error - {}", bindToPort, e.getMessage());
 			throw new FailedToBindToPortException(e);
 		}
