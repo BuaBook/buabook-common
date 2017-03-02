@@ -1,11 +1,12 @@
 package com.buabook.common.test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
+
 import org.junit.Test;
 
 import com.buabook.common.Patterns;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
 
 public class PatternsTest {
 
@@ -30,6 +31,13 @@ public class PatternsTest {
 	public void testIsValidEmailReturnsTrueForValidEmailAddress() {
 		assertThat(Patterns.isValidEmail("test@email.com"), is(equalTo(true)));
 		assertThat(Patterns.isValidEmail("test@email.co.uk"), is(equalTo(true)));
+	}
+	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Patterns();
 	}
 }
 

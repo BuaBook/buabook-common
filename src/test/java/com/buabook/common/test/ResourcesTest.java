@@ -36,4 +36,10 @@ public class ResourcesTest {
 		assertThat(fileContents, containsString("HelpersTest.java"));
 	}
 
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Resources();
+	}
 }

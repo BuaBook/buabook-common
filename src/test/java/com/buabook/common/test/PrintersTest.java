@@ -1,7 +1,11 @@
 package com.buabook.common.test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.not;
+import static org.hamcrest.Matchers.nullValue;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -68,6 +72,13 @@ public class PrintersTest {
 	@Test
 	public void testArrayToStringReturnsEmptyStringIfEmptyArrayPassed() {
 		assertThat(Printers.arrayToString(new Object[0]), is(equalTo("")));
+	}
+	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Printers();
 	}
 
 }

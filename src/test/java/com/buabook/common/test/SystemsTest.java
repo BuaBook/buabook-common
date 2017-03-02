@@ -60,5 +60,11 @@ public class SystemsTest {
 		assertThat(Systems.getConfig("JAVA_HOME"), is(not(equalTo("will-not-be-used"))));
 	}
 	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Systems();
+	}
 	
 }

@@ -1,7 +1,8 @@
 package com.buabook.common.test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -59,5 +60,13 @@ public class FormattersTest {
 		String tzId = LOCAL_DATE_TIME_ZONE.getShortName(toTest.getMillis());
 		
 		assertThat(toTest.toString(Formatters.DATE_TIME_DASH), is(equalTo("2016-03-10-00-23-00-000-" + tzId)));
+	}
+	
+	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Formatters();
 	}
 }

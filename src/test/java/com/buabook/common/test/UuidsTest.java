@@ -44,4 +44,11 @@ public class UuidsTest {
 		assertThat(Uuids.isNullOrEmpty(UUID.fromString("00000000-0000-0000-0000-000000000000")), is(equalTo(true)));
 	}
 	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Uuids();
+	}
+	
 }

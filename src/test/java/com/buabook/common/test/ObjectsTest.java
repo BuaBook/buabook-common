@@ -80,6 +80,13 @@ public class ObjectsTest {
 		assertThat((Integer) result.get("field2"), is(equalTo(123)));
 	}
 	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new Objects();
+	}
+	
 	private class ObjectWithFields { 
 		
 		@SuppressWarnings("unused")

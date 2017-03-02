@@ -115,5 +115,12 @@ public class StringSplitterTest {
 		assertThat(theSplit, hasSize(2));
 		assertThat(theSplit, containsInRelativeOrder("abc", "ghi"));
 	}
+	
+	// Constructor
+	
+	@Test
+	public void testConstructorThrowsNoError() {
+		new StringSplitter();
+	}
 
 }
