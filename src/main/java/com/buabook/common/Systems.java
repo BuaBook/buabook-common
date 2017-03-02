@@ -49,8 +49,8 @@ public final class Systems {
 	 * @param envPropName The system configuration value to load
 	 * @return The system property value
 	 * @throws IllegalArgumentException If the property is not set
-	 * @see Systems#getenv(String)
-	 * @see Systems#getProperty(String)
+	 * @see System#getenv(String)
+	 * @see System#getProperty(String)
 	 */
 	public static String getConfig(String envPropName) throws IllegalArgumentException {
 		if(Strings.isNullOrEmpty(envPropName))
