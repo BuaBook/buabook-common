@@ -6,7 +6,7 @@ import com.google.common.base.Strings;
 
 /**
  * <h3>Common Regular Expressions (as {@link Pattern})</h3>
- * <br/><br/>(c) 2016 Sport Trades Ltd
+ * (c) 2016 Sport Trades Ltd
  * 
  * @author Jas Rajasansir
  * @version 1.0.0

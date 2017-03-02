@@ -8,7 +8,7 @@ import com.google.common.math.IntMath;
 /**
  * <h3>Random <i>Uber</i>-like Code Generator</h3>
  * <p>Generates random code sequences that can be given to users as referral codes for example.</p>
- * <br/><br/>(c) 2016 Sport Trades Ltd
+ * (c) 2016 Sport Trades Ltd
  * 
  * @author Jas Rajasansir
  * @version 1.0.0

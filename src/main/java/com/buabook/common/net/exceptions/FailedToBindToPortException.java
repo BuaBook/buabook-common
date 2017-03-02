@@ -1,9 +1,9 @@
 package com.buabook.common.net.exceptions;
 
 /**
- * <br/><br/>(c) 2014 BuaBook Ltd
+ * (c) 2014 Sport Trades Ltd
  *
- * @author Jaskirat M.S. Rajasansir
+ * @author Jas Rajasansir
  * @version 1.0.0
  * @since 13 Jul 2014
  */
