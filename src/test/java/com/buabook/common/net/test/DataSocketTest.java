@@ -114,4 +114,13 @@ public class DataSocketTest {
 		assertThat(socket.isClosed(), is(equalTo(testIsClosedBoolean)));
 	}
 	
+	// DataSocket.disconnect
+	
+	@Test
+	public void testDisconnectDoesNotAttemptToDisconnectTwice() throws DataSocketFailedToInitialiseException {
+		DataSocket socket = new DataSocket(testSocket);
+		socket.disconnect();
+		socket.disconnect();
+	}
+	
 }
