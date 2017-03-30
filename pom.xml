@@ -4,7 +4,7 @@
 	<groupId>com.buabook</groupId>
 	<artifactId>buabook-common</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<name>BuaBook Common Library</name>
 	<description>Useful helper functions and classes used throughout the BuaBook applications (c) 2017 Sport Trades Ltd</description>
@@ -12,7 +12,7 @@
 	<url>http://buabook.github.io</url>
 	<licenses>
 		<license>
-    		<name>GPLv3</name>
+    		<name>Apache-2.0</name>
     		<url>https://raw.githubusercontent.com/BuaBook/buabook-common/master/LICENSE</url>
   		</license>
 	</licenses>
